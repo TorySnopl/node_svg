@@ -25,5 +25,13 @@ inq
             choices: ["Circle","Triangle","Square"]
         }
     
-    ]);
+    ])
+    .then ((response) => {
+        let characters = response.characters;
+        let color = response.color;
+        let shape = response.shape;
+    })
+    .catch ((error)=>{
+        console.error(error)
+    })
 
