@@ -59,7 +59,7 @@ inq
 
       
 
-      fs.writeFile("logo.svg",svgLogo,function(err){
+      fs.writeFile("./logos/logo.svg",svgLogo,function(err){
         if(err)throw err;
         else{ console.log("generating logo.svg")}
      });
