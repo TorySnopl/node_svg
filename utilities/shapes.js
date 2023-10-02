@@ -9,13 +9,13 @@ class Shapes {
 
 class Tri extends Shapes {
     render(){
-        return `<polygon  points ="250,60 100, 400 400, 400" fill = "${this.color}"/>`
+        return `<polygon  points ="150,18 244, 182 56, 182" fill = "${this.color}"/>`
     }
 }
 
 class Sq extends Shapes {
     render(){
-        return `<rect width="200" height="200" fill = "${this.color}"/>`
+        return `<rect x="55" y="40" width="200" height="200" fill = "${this.color}"/>`
     }
 }
 
