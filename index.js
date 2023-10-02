@@ -15,21 +15,36 @@ inq
         },
         {
             type: 'input',
-            name: 'color',
-            message: 'please enter a color keyword:'
+            name: 'textColor',
+            message: 'What color would you like your text to be?:'
         },
         {
             type: 'list',
             name: 'shape',
             message: 'Please select a shape:',
             choices: ["Circle","Triangle","Square"]
-        }
+        },
+        {
+            type: 'input',
+            name: 'shapeColor',
+            message: 'What color would you like your shape to be?:'
+        },
     
     ])
     .then ((response) => {
         let characters = response.characters;
-        let color = response.color;
+        let textColor = response.textColor;
         let shape = response.shape;
+        let shapeColor = response.shapeColor;
+
+        const svg = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
+
+        svg.setAttribute('width', '300px');
+        svg.setAttribute('height', '200px');
+
+        
+
+
     })
     .catch ((error)=>{
         console.error(error)
