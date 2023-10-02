@@ -6,7 +6,7 @@ describe('Tri', ()=>{
     const tri = new Tri();
     let color = 'green';
     tri.colorChoice(color);
-    expect (tri.render()).toEqual(`<polygon width="300" height = "200" points ="250,60 100, 400 400, 400" fill = ${color}>`);
+    expect (tri.render()).toEqual(`<polygon points ="150,18 244,182 56, 182" fill = "${color}"/>`);
     });
 });
 
@@ -15,7 +15,7 @@ describe('Sq', ()=>{
     const square = new Sq();
     let color = 'blue';
     square.colorChoice(color);
-    expect (square.render()).toEqual(`<rect width="200" height="200" fill = ${color}>`);
+    expect (square.render()).toEqual(`<rect x="55" y="40" width="200" height="200" fill = "${color}"/>`);
     });
 });
 
@@ -24,6 +24,6 @@ describe('Cir', ()=>{
     const cir = new Cir();
     let color = 'red';
     cir.colorChoice(color);
-    expect (cir.render()).toEqual(`<circle cx="50" cy="50" r="150" fill=${color}>`);
+    expect (cir.render()).toEqual(`<circle cx="150" cy="100" r="80" fill="${color}"/>`);
     });
 });
