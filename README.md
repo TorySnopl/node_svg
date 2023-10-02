@@ -1,18 +1,18 @@
 # SVG Generator Using Node JS
 ## User Story
->WHEN I am prompted for text
->THEN I can enter up to three characters
->WHEN I am prompted for the text color
->THEN I can enter a color keyword (OR a hexadecimal number)
->WHEN I am prompted for a shape
->THEN I am presented with a list of shapes to choose from: circle, >triangle, and square
->WHEN I am prompted for the shape's color
->THEN I can enter a color keyword (OR a hexadecimal number)
->WHEN I have entered input for all the prompts
->THEN an SVG file is created named `logo.svg`
->AND the output text "Generated logo.svg" is printed in the command line
->WHEN I open the `logo.svg` file in a browser
->THEN I am shown a 300x200 pixel image that matches the criteria I entered
+> * WHEN I am prompted for text
+>   THEN I can enter up to three characters
+> * WHEN I am prompted for the text color
+>   THEN I can enter a color keyword (OR a hexadecimal number)
+> * WHEN I am prompted for a shape
+>   THEN I am presented with a list of shapes to choose from: circle, triangle, and square
+> * WHEN I am prompted for the shape's color
+>   THEN I can enter a color keyword (OR a hexadecimal number)
+> * WHEN I have entered input for all the prompts
+>   THEN an SVG file is created named `logo.svg`
+>   AND the output text "Generated logo.svg" is printed in the command line
+> * WHEN I open the `logo.svg` file in a browser
+>   THEN I am shown a 300x200 pixel image that matches the criteria I entered
 
 ## Screenshot of End Product
 
@@ -36,8 +36,8 @@ I also found a very cool NPM called max length input prompt. It allowed me to ke
 
 ## Links
 
-[Github Repo](https://github.com/TorySnopl/node_svg)
-[Demo Video]()
+* [Github Repo](https://github.com/TorySnopl/node_svg)
+* [Demo Video](https://drive.google.com/file/d/1MPThN6Lm_aZXVaYE7_mu7Fc1zLAPJHXg/view)
 
 ## Credits
 Thank you to the developers of the technologies listed above. Also a big shoutout to the team at askBCS who helped me troubleshoot along the way.
