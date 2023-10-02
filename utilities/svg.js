@@ -13,7 +13,7 @@ class SVG {
     }
 
     setCharEl(characters,textColor){
-        this.charEl = `<text x="150" y="150" font-size="40" text-anchor="middle" fill="${textColor}">${characters}</text>`
+        this.charEl = `<text x="150" y="125" font-size="40" text-anchor="middle" fill="${textColor}">${characters}</text>`
     }
 }
 

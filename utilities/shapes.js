@@ -9,19 +9,19 @@ class Shapes {
 
 class Tri extends Shapes {
     render(){
-        return `<polygon  points ="250,60 100, 400 400, 400" fill = "${this.color}">`
+        return `<polygon  points ="250,60 100, 400 400, 400" fill = "${this.color}"/>`
     }
 }
 
 class Sq extends Shapes {
     render(){
-        return `<rect width="200" height="200" fill = "${this.color}">`
+        return `<rect width="200" height="200" fill = "${this.color}"/>`
     }
 }
 
 class Cir extends Shapes{
     render(){
-        return `<circle cx="50" cy="50" r="150" fill="${this.color}">`
+        return `<circle cx="150" cy="100" r="80" fill="${this.color}"/>`
     }
 }
 

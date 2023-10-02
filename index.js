@@ -57,8 +57,11 @@ inq
       svg.setCharEl(characters,textColor);
       let svgLogo = svg.render();
 
+      
+
       fs.writeFile("logo.svg",svgLogo,function(err){
-        if(err)throw err
+        if(err)throw err;
+        else{ console.log("generating logo.svg")}
      });
 
         
