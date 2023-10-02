@@ -5,7 +5,7 @@ class SVG {
     }
 
     render(){
-        return `<svg version="1.1" width="300" height="200" xmlns="http://www.w3.org/2000/svg>${this.shapeEl}${this.charEl}</svg>`
+        return `<svg version="1.1" width="300" height="200" xmlns="http://www.w3.org/2000/svg">${this.shapeEl}${this.charEl}</svg>`
     }
 
     setShapeEl(shape){
@@ -13,7 +13,7 @@ class SVG {
     }
 
     setCharEl(characters,textColor){
-        this.charEl = `<text x="150" y="150" fill="${textColor}">${characters}</text>`
+        this.charEl = `<text x="150" y="150" font-size="40" text-anchor="middle" fill="${textColor}">${characters}</text>`
     }
 }
 
