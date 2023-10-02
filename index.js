@@ -3,6 +3,8 @@ const MaxLengthInputPrompt = require('inquirer-maxlength-input-prompt');
 const fs = require('fs');
 const shapes = require('./utilities/shapes.js');
 
+const SVG = require('./utilities/svg.js');
+
 inq.registerPrompt('maxLength', MaxLengthInputPrompt);
 
 inq
@@ -37,10 +39,27 @@ inq
         let shape = response.shape;
         let shapeColor = response.shapeColor;
 
-        const svg = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
+      switch (shape){
+        case 'Circle':
+            shape = new shapes.Cir();
+            break;
+        case 'Triangle':
+            shape = new shapes.Tri();
+            break;
+        case 'Square':
+            shape = new shapes.Sq();
+            break;
+      }  
+      shape.colorChoice(shapeColor);
+      
+      let svg = new SVG();
+      svg.setShapeEl(shape);
+      svg.setCharEl(characters,textColor);
+      let svgLogo = svg.render();
 
-        svg.setAttribute('width', '300px');
-        svg.setAttribute('height', '200px');
+      fs.writeFile("logo.svg",svgLogo);
+
+        
 
         
 
