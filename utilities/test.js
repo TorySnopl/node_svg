@@ -1,5 +1,7 @@
 
+const { describe } = require('node:test');
 const {Tri,Sq,Cir} = require('./shapes.js');
+const SVG = require('./svg.js');
 
 describe('Tri', ()=>{
     it("should render correctly", ()=>{
@@ -27,3 +29,23 @@ describe('Cir', ()=>{
     expect (cir.render()).toEqual(`<circle cx="150" cy="100" r="80" fill="${color}"/>`);
     });
 });
+
+describe('SVG Class', ()=>{
+    it("should render correctly with shape and character", () => {
+        const svg = new SVG();
+        const tri = new Tri();
+
+        svg.setShapeEl(tri);
+
+        const char = 'ABC'
+        const txtClr = 'red';
+
+        svg.setCharEl(char,txtClr);
+
+        const renderSVG = svg.render();
+
+        expect(renderSVG).toContain('<polygon points');
+        expect(renderSVG).toContain('<text x="150" y="125" font-size="40"');
+        expect(renderSVG).toContain(`fill="${txtClr}"`);
+    })
+})
